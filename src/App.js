@@ -1,24 +1,32 @@
-import logo from './logo.svg';
+import '@picocss/pico';
 import './App.css';
+import { CurvedLine } from './svg';
 
-function App() {
+function App () {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <body className='container'>
+      <header>
+        <nav>
+          <ul>
+            <li><strong>Brand</strong></li>
+          </ul>
+          <ul>
+            <li><a href="#">Mobil Ilova</a></li>
+            <li><a href="#">Biz Haqimizda</a></li>
+          </ul>
+        </nav>
       </header>
-    </div>
+      <main>
+        <section className='grid'>
+          <h1>
+            Onlayn Konsultatsiyadan
+            <span className='highlighted'>Hoziroq </span>  foydalaning
+          </h1>
+          <div></div>
+        </section>
+      </main>
+      <button type="submit">Upload your Image</button>
+    </body>
   );
 }
 
