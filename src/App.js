@@ -9,7 +9,8 @@ import {
   RegisterSvg,
   CheckupSvg,
   CalendarSvg,
-  TickIcon
+  TickIcon,
+  WelcomeIllustrationSvg
 } from './svg'
 
 const steps = [
@@ -96,7 +97,12 @@ function App () {
       </header>
       <main>
         <section className='bg-secondary'>
-          <div className='wrapper'>
+
+          <div className='wrapper flex flex-col items-center 
+          lg:flex-row-reverse lg:items-center lg:justify-between'>
+            <div className="lg:scale-150 flex-1 flex items-center">
+              <WelcomeIllustrationSvg />
+            </div>
             <div className='flex flex-col lg:w-2/3 items-center lg:items-start'>
               <p className='line-clamp-2 h1'>Onlayn Konsultatsiyadan</p>
               <p className='h1'>
