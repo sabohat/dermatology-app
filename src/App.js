@@ -76,7 +76,7 @@ function App () {
             <ul>
               <li>
                 <strong className='flex items-center space-x-2 h3' >
-                  <span className="scale-150">
+                  <span className="lg:scale-150">
                     <LogoSvg />
                   </span>
                   <span className='highlighted'>E</span>-Shifo
@@ -85,10 +85,10 @@ function App () {
             </ul>
             <ul className='flex space-x-16 highlighted '>
               <li className="hover:underline">
-                <a href='#bot'>Telegram bot</a>
+                <a href='#bot'>Telegram</a>
               </li>
               <li className="hover:underline">
-                <a href='#about'>Biz haqimizda</a>
+                <a href='#about'>Konsultatsiya</a>
               </li>
             </ul>
           </nav>
@@ -97,7 +97,7 @@ function App () {
       <main>
         <section className='bg-secondary'>
           <div className='wrapper'>
-            <div className='flex flex-col w-2/3'>
+            <div className='flex flex-col lg:w-2/3 items-center lg:items-start'>
               <p className='line-clamp-2 h1'>Onlayn Konsultatsiyadan</p>
               <p className='h1'>
                 <span className='highlighted mr-2'>Hoziroq foydalaning</span>
@@ -120,7 +120,8 @@ function App () {
           </div>
         </section>
         <section className='bg-primary py-10'>
-          <div className='wrapper flex flex-col lg:flex-row justify-between'>
+          <div className='wrapper flex flex-col lg:flex-row justify-between 
+          space-y-10 lg:space-y-0'>
             {infos.map((info) => (
               <>
                 <div className='stats text-white text-center'>
@@ -134,10 +135,11 @@ function App () {
             ))}
           </div>
         </section>
-        <section className='py-20'>
+        <section id="about" className='py-20'>
           <div className="wrapper">
             <h2 className="h2 mb-10">Konsultatsiya qanday amalga oshiriladi?</h2>
-            <div className=' flex space-x-6 '>
+            <div className=' flex gap-6 lg:flex-row
+            flex-col'>
               {steps.map((step) => (
                 <div className='border border-gray-500 flex-1 p-10 rounded-2xl text-center 
                 flex flex-col space-y-10 items-center
@@ -156,10 +158,21 @@ function App () {
               ))}
             </div>
           </div>
-
+          <div className="wrapper">
+            <a
+              href='https://t.me/dermatolog_doktor_bot'
+              className='w-fit mx-auto text-white bg-primary flex items-center space-x-5 px-6 py-2 rounded-full h3 mt-20
+              hover:bg-secondary hover:text-primary transition-all duration-150 ease-linear'
+            >
+              <span>Shifokorga Murojaat Qilish</span>
+              <TelegramLogoIcon />
+            </a>
+          </div>
         </section>
-        <section id="about" className="py-20">
-          <div className="wrapper flex">
+
+        <section className="lg:py-20">
+          <div className="wrapper flex lg:flex-row 
+          flex-col gap-6">
             <div className="flex-1 flex items-center justify-center lg:scale-150">
               <DoctorIllustrationSvg />
             </div>
@@ -189,7 +202,8 @@ function App () {
                 className='w-fit mx-auto mt-6 bg-secondary text-primary flex items-center space-x-5 px-6 py-2 rounded-full h3
               hover:bg-white transition-all duration-150 ease-linear'
               >
-                <span>Dermatolog Shifokor konsultatsiyasiga yozilish </span>
+                <span className="hidden lg:inline">Dermatolog Shifokor konsultatsiyasiga yozilish </span>
+                <span className="lg:hidden">Shifokorga murojaat</span>
                 <TelegramLogoIcon />
               </a>
             </div>
