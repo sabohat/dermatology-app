@@ -84,7 +84,7 @@ function App () {
                 </strong>
               </li>
             </ul>
-            <ul className='flex space-x-16 highlighted '>
+            <ul className='flex space-x-5 lg:space-x-16 highlighted '>
               <li className="hover:underline">
                 <a href='#bot'>Telegram</a>
               </li>
