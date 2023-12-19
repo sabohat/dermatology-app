@@ -80,7 +80,7 @@ function App () {
                   <span className="lg:scale-150">
                     <LogoSvg />
                   </span>
-                  <span className='highlighted'>E</span>-Shifo
+                  <span className='highlighted'>Med</span>-Maslahat
                 </strong>
               </li>
             </ul>
